@@ -1,7 +1,11 @@
-consoleText(['Welcome To My About Page.', 'I hope you enjoy the experience.', 'It was made by Devonte Longmire.'], 'text',['FF5A5F','00A699','FC642D']);
+
+"use strict";
+
+
+consoleText([ '', 'Welcome!', 'My name is Devonte Longmire.', 'This is my Virtual Resume.', 'I hope you enjoy this site!'], 'text',['000','00A699','FC642D']);
 //The text animation on about
 function consoleText(words, id, colors) {
-  if (colors === undefined) colors = ['#0A0A0B'];
+  if (colors === undefined) colors = ['#000'];
   var visible = true;
   var con = document.getElementById('console');
   var letterCount = 1;
@@ -48,3 +52,10 @@ function consoleText(words, id, colors) {
     }
   }, 400)
 }
+
+
+
+
+
+  
+
