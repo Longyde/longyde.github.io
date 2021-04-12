@@ -1,4 +1,5 @@
 
+/*General layout*/
 .heading {
 	display: flex;
 	flex-direction: column;
@@ -6,58 +7,6 @@
 	justify-content: center;
 	margin: 0 2% 0 2%;
 	box-shadow: 5px 5px 15px 5px #000000;
-}
-.space-down {
-  padding-top: 2%;
-}
-body {
-	background-color: #0588b0;
-	
-}
-button:hover {
-  transform: rotate3d(1,2,3,0deg) scale(1.1);
-    transition: all 200ms ease-in-out;
-}
-hr {
-	margin-bottom: 0;
-}
-.school {
-  font-size: .7em;
-}
-
-#profile_image {
-	max-width: 20%;
-	max-height: 30%;
-	border-radius: 1em;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	animation: pulse 2s, magnified 1s;
-	box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.52);
-
-}
-.center {
-	text-align:center;
-	align-content: center;
-	display: block;
-}
-.indent {
-	text-indent: 5%;
-}
-
-/*Summary page*/
-.summarystate {
-  display: flex;
-  flex-direction: row;
-  position: inherit;
-}
-.swing-lefts {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  animation-name: swingLs;
-  animation-duration: 4s;
-  animation-fill-mode: forwards; 
 }
 .card {
   display: flex;
@@ -67,9 +16,71 @@ hr {
   margin: 0 2% 0 2%;
   box-shadow: 5px 5px 15px 5px #000000;
 }
-.apus {
-  width: 70%;
+.space-down {
+  padding-top: 2%;
 }
+body {
+	background-color: #0588b0;
+	
+}
+.big-firstl {
+  font-size: 1.5em;
+}
+hr {
+	margin-bottom: 0;
+}
+
+
+.center {
+	text-align:center;
+	align-content: center;
+	display: block;
+}
+.indent {
+	text-indent: 5%;
+}
+
+/*animation profile pic*/
+#profile_image {
+  max-width: 20%;
+  max-height: 30%;
+  border-radius: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  animation: pulse 2s, magnified 1s;
+  box-shadow: 5px 5px 7px 5px rgba(0,0,0,0.52);
+
+}
+
+@keyframes magnified{
+0%{
+transform: scale(0,0);
+}
+70%{
+transform: scale(1.2,1.2);
+}
+100%{
+transform: scale(1,1);
+}
+}
+
+
+
+/*Summary page*/
+.summarystate {
+  display: flex;
+  flex-direction: row;
+  position: inherit;
+}
+
+.lion_emoji {
+  display: flex;
+  justify-content: center;
+  font-size: 280%;
+}
+
+/*Animations*/
 .swing-rights {
   width: 100px;
   height: 100px;
@@ -77,6 +88,14 @@ hr {
   animation-name: swingRs;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+}
+.swing-lefts {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: swingLs;
+  animation-duration: 4s;
+  animation-fill-mode: forwards; 
 }
 @keyframes swingRs {
   0%   {left:0px; top:0px;}
@@ -87,66 +106,68 @@ hr {
   0%   {left:80vw; top:0px;}
   100%  {left:41%; top:0px;}
 }
+button:hover {
+  transform: rotate3d(1,2,3,0deg) scale(1.1);
+    transition: all 200ms ease-in-out;
+}
 .comminv {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-/* The bullet points
-*/
-.lists {
+
+
+/* Hobbies */
+
+.interest_section {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
-  list-style-position:  inside; 
   justify-content: space-around;
-  padding-right: 30%; 
+  padding: auto;
+  padding-right: .5%;
+}
 
+.interest_left {
+  order: 1;
+  
 }
-ul.interest1 {
-    
-  font-size: 100%;
+
+.interest_middle {
+  order: 2;
 }
-ul.interest2 {
-     
-  font-size: 100%;
+
+.interest_right {
+  order: 3;
 }
-ul.interest1 > li:nth-child(1) {
-  list-style: "\270D ";
+
+
+/*Ventures page*/
+.ventures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: auto;
+  
 }
-ul.interest1 > li:nth-child(2) {
-  list-style: "\1F4C8 ";
+
+.simple-img_img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 20vh;
+  border-radius: 20px;
+  padding: auto;
+  margin: auto;
+  
 }
-ul.interest1 > li:nth-child(3) {
-  list-style: "\1F4B5 ";
-}
-ul.interest1 > li:nth-child(4) {
-  list-style: "\1F4F6 ";
-}
-ul.interest1 > li:nth-child(5) {
-  list-style: "\1F4BB ";
-}
-ul.interest2 > li:nth-child(1) {
-  list-style: "\1F4F1 ";
-}
-ul.interest2 > li:nth-child(2) {
-  list-style: "\269B ";
-}
-ul.interest2 > li:nth-child(3) {
-  list-style: "\1F916 ";
-}
-ul.interest2 > li:nth-child(4) {
-  list-style: "\1F421 ";
-}
-ul.interest2 > li:nth-child(5) {
-  list-style: "\1F4DA ";
-}
-.big-list-t {
-  font-size:  1.3em;
-}
-.big-firstl {
-  font-size: 1.5em;
-}
+
+.simple-img_img:hover {
+  transform: rotate3d(1,2,3,40deg) scale(1.3);
+    transition: all 400ms ease-in-out;
+} 
+
+
+
 /*end summary*/
 
 
@@ -166,35 +187,15 @@ hr {
 	background-color:black;
 
 }
-/*For feedback form*/
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px;  
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-  box-sizing: border-box; 
-  margin-top: 6px;
-  margin-bottom: 16px; 
-  resize: vertical;
-}
-input[type=submit] {
-  background-color: #024cc1;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: #45a049;
-}
+
 .language-img1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
-
+  position: relative;
 }
+
 .clear-txt {
   font-size: 111px;
   color: white;
@@ -203,67 +204,37 @@ input[type=submit]:hover {
   width: 100px;
   height: 100px;
   background-color: red;
+  color: #00CC44;
   position: relative;
   animation-name: example;
   animation-duration: 8s;
   animation-iteration-count: infinite;
 }
-.simple-img {
-  width: 70%;
-  border-radius: 20px;
-
-}
-
-.simple-img:hover {
-  transform: rotate3d(1,2,3,40deg) scale(1.3);
-    transition: all 400ms ease-in-out;
-} 
-@keyframes example {
-  0%   {background-color:red; left:0px; top:0px; color: #00CC44;}
-  25%  {background-color:yellow; left:10%; top:0px; color: blue;}
-  50%  {background-color:blue; left:0; top:0; color: yellow;}
-  75%  {background-color:green; left:10%; top:0; color: #FF2A00;}
-  100% {background-color:red; left:0px; top:0px; color: #00CC44;}
-}
 
 
+/*Projects*/
 
 .language-img1 img {
   width: 8%;
   height: 9%;
-
-
 }
 .language-img {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-
-
 }
 .language-img img {
   width: 10%;
-
-
-}
-
-.pulse {
-  margin:100px;
-  display: block;
-  border-radius: 50%;
-  background: #cca92c;
-  cursor: pointer;
-  box-shadow: 0 0 0 rgba(204,169,44, 0.4);
-  animation: pulse 5s infinite;
 }
 
 
+
+/*Project page*/
 #project_contain{
   opacity: 1;
   width: 100%;
   height: 100%;
   padding-left:   10%;
-
 }
 #project_contain.overlay {
   height: 100%;
@@ -323,38 +294,18 @@ input[type=submit]:hover {
     font-weight: bold;
 }
 .project_img {
+  display: flex;
   width: 80%;
   height: 80%;
-}
-.text img{
-  width:  20vw;
-}
-@keyframes magnified{
-0%{
-transform: scale(1.2,1.2);
-}
-70%{
-transform: scale(1.2,1.2);
-}
-100%{
-transform: scale(1,1);
-}
-}
-@media only screen and (min-width: 400px) {
-  /*More to come*/
+  flex-direction: row;
+
 }
 
 
-/* comment for later */
 
+/*Mobile/ smaller screens related*/
 
-
-
-
-
-
-
-@media all and (min-width:760px) and (max-width: 1310px) {
+@media only screen and (max-width: 978px) {
   .project_div {
     flex-direction: column;
     justify-content: center;
@@ -362,8 +313,13 @@ transform: scale(1,1);
     padding: auto;
     
   }
+  .lion_emoji {
+  display: flex;
+  justify-content: center;
+  font-size: 200%;
+}
   #project_contain #project_window {
-    width: 80%;
+    width: 100%;
     align-content: center;
   }
   .project_title h3 {
@@ -372,21 +328,17 @@ transform: scale(1,1);
 
 }  
 
-/* For below 760px width */
-@media all and (max-width: 760px) {
+
+@media only screen and (max-width: 767px) {
 
   /* general tag */
-  html {
-    width: 100vw;
-  }
-
-  p {
-    font-size: var(--font-small);
-    font-weight: var(--font-regular);
-    color: var(--color-black);
-    margin:4px 0;
-  }
+ 
   
+  .lion_emoji {
+  display: flex;
+  justify-content: center;
+  font-size: 180%;
+}
   .project_div {
     flex-direction: column;
      justify-content: center;
@@ -408,4 +360,36 @@ transform: scale(1,1);
  
   }
 
+}
+@media only screen and (min-width: 479px) and (max-width: 767px) {
+  html {
+    width: 100vw;
+  }
+
+  .lion_emoji {
+  display: flex;
+  justify-content: center;
+  font-size: 150%;
+}
+  .project_div {
+    flex-direction: column;
+     justify-content: center;
+    margin: auto;
+    padding: auto;
+  }
+  #project_contain #project_window {
+    margin-top: 40px;
+    width:100%;
+  }
+  .project_title h3{
+    font-size: 1.4rem;
+    width:70%;
+  }
+  .project_title {
+    width:90%;
+    height:90%;
+    opacity: 0.8;
+ 
+  }
+  
 }
