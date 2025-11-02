@@ -4,11 +4,10 @@
 
 consoleText([
   '',
-  'Building since 1999 — now with purpose.',
-  'Raspberry Pi tinkerer. AI collaborator.',
-  'Software engineer and creative problem solver.',
-  'Turning code into tools that empower people.',
-  'Analytical mind. Autonomous maker. Lifelong learner.'
+  'Welcome!',
+  'I am Mr. Longmire.',
+  'Designing intelligent, human-centered systems.',
+  "Let\'s build something remarkable."
 ], 'text',['47C6FF','8FD3FF','FFFFFF']);
 //The text animation on about
 function consoleText(words, id, colors) {
