@@ -73,8 +73,12 @@ body {
   justify-content: center;
   padding: 2rem 1rem 1rem;
 }
-.big-firstl {
-  font-size: 1.5em;
+
+.main-navbar .navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 1rem;
 }
 
 .main-navbar .nav-link {
