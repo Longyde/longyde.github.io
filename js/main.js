@@ -2,7 +2,14 @@
 "use strict";
 
 
-consoleText([ '', 'Welcome!', 'My name is Devonte Longmire.', 'This is my Virtual Resume.', 'I hope you enjoy this site!'], 'text',['000','00A699','FC642D']);
+consoleText([
+  '',
+  'Building since 1999 — now with purpose.',
+  'Raspberry Pi tinkerer. AI collaborator.',
+  'Software engineer and creative problem solver.',
+  'Turning code into tools that empower people.',
+  'Analytical mind. Autonomous maker. Lifelong learner.'
+], 'text',['47C6FF','8FD3FF','FFFFFF']);
 //The text animation on about
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#000'];
