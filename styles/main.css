@@ -30,6 +30,8 @@ body {
   box-shadow: 0 30px 60px rgba(3, 15, 31, 0.35);
   backdrop-filter: blur(12px);
   padding: 0.75rem 1.75rem;
+  position: relative;
+  z-index: 10;
 }
 
 .main-navbar .navbar-brand {
