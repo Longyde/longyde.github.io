@@ -480,6 +480,7 @@ button:hover {
 .hobby-columns {
   display: grid;
   gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .hobby-columns > div {
@@ -503,10 +504,15 @@ button:hover {
   margin-bottom: 0;
 }
 
-@media (min-width: 640px) {
-  .hobby-columns {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.hobby-columns h3 {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+  text-align: center;
+}
+
+.hobby-columns p {
+  margin-bottom: 0;
 }
 
 @media (min-width: 992px) {
@@ -516,10 +522,6 @@ button:hover {
 
   .about-wrapper .info-card:nth-child(1) {
     grid-column: 1 / -1;
-  }
-
-  .hobby-columns {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
