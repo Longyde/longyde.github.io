@@ -4,7 +4,8 @@
 
 consoleText([
   '',
-  'Welcome!'.
+  
+  'Welcome!',
   'My name is Devonte Longmire',
   'Building since 1999 — now with purpose.',
   'Raspberry Pi tinkerer. AI collaborator.',
@@ -67,4 +68,3 @@ function consoleText(words, id, colors) {
 
 
   
-
