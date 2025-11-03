@@ -4,8 +4,6 @@
 
 consoleText([
   '',
-  'Welcome!'.
-  'My name is Devonte Longmire',
   'Building since 1999 — now with purpose.',
   'Raspberry Pi tinkerer. AI collaborator.',
   'Software engineer and creative problem solver.',
