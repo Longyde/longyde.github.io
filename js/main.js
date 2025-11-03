@@ -3,7 +3,7 @@
 // Call directly (DOM is ready because of `defer`)
 consoleText(
   [
-    'Welcome!'.
+    'Welcome!',
     'My name is Devonte Longmire',
     "Building since 1999 — now with purpose.",
     "Raspberry Pi tinkerer. AI collaborator.",
