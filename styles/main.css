@@ -409,14 +409,16 @@ button:hover {
   font-size: clamp(1.6rem, 4vw, 2.1rem);
   font-weight: 700;
   margin-bottom: 1.25rem;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .info-card h3 {
   font-size: 1.05rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .info-card p,
@@ -462,31 +464,17 @@ button:hover {
   align-items: center;
   gap: 0.35rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--accent);
   text-decoration: none;
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
 }
 
 .info-link:hover,
 .info-link:focus {
   color: #a6e1ff;
   text-decoration: underline;
-}
-
-.info-subsection {
-  margin-top: 1.5rem;
-}
-
-.info-subsection h3 {
-  font-size: 0.95rem;
-  letter-spacing: 0.04em;
-  color: rgba(245, 248, 255, 0.78);
-  margin-bottom: 0.4rem;
-}
-
-.info-subsection p {
-  margin-bottom: 0;
 }
 
 .hobby-columns {
