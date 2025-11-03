@@ -695,54 +695,86 @@ a, a:hover {
 	text-decoration: none;
 	color: black;
 }
-hr {
-	height: 30px;
-	border-width: 10px;
-	color:gray;
-	background-color:black;
-
-}
-
-.language-img1 {
+/*Project page*/
+.projects-content {
+  width: min(1100px, 92%);
+  margin: 0 auto 4rem;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: center;
-  position: relative;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-.clear-txt {
-  font-size: 111px;
-  color: white;
-}
-.clear-background {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  color: #00CC44;
-  position: relative;
-  animation-name: example;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
-}
-
-
-/*Projects*/
-
-.language-img1 img {
-  width: 8%;
-  height: 9%;
-}
-.language-img {
+.project-category {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.language-img img {
-  width: 10%;
+  flex-direction: column;
+  gap: 2rem;
 }
 
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
 
+.section-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  color: var(--text-primary);
+  letter-spacing: 0.04em;
+}
+
+.section-top-link {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.section-top-link:hover,
+.section-top-link:focus {
+  color: #c6ecff;
+  border-color: #c6ecff;
+}
+
+.section-top-link:focus-visible {
+  outline: 3px solid rgba(71, 198, 255, 0.65);
+  outline-offset: 4px;
+}
+
+.project-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.project-card {
+  background: rgba(4, 26, 54, 0.78);
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid rgba(71, 198, 255, 0.18);
+  box-shadow: 0 24px 48px rgba(3, 15, 31, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 28px 60px rgba(3, 15, 31, 0.55);
+}
+
+.project-card__media {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
 
 /*Project page*/
 .projects-content {
