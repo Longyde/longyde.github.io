@@ -108,6 +108,12 @@ body {
   align-items: center;
 }
 
+.experience-section {
+  display: flex;
+  justify-content: center;
+  padding: 0 1.5rem 4rem;
+}
+
 #profile_image {
   max-width: 20%;
   max-height: 30%;
@@ -332,6 +338,110 @@ body {
 
 .center {
   text-align: center;
+}
+
+.experience-wrapper {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.experience-intro {
+  max-width: 720px;
+  margin: 0.75rem auto 0;
+  color: var(--text-muted);
+}
+
+.experience-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  background: rgba(4, 26, 54, 0.78);
+  border-radius: 24px;
+  padding: 2.5rem;
+  color: var(--text-primary);
+  box-shadow: 0 24px 50px rgba(3, 15, 31, 0.45);
+  border: 1px solid rgba(71, 198, 255, 0.22);
+  backdrop-filter: blur(8px);
+}
+
+.experience-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.experience-card__dates {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.experience-card__title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.experience-card__summary {
+  margin-bottom: 1.5rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+.experience-card__subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.experience-card__list {
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: var(--text-muted);
+}
+
+.experience-card__list li strong {
+  color: var(--text-primary);
+}
+
+.experience-card__list li::marker {
+  color: var(--accent);
+}
+
+.experience-card__list li {
+  line-height: 1.6;
+}
+
+.experience-card:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .experience-card {
+    padding: 1.75rem;
+  }
+
+  .experience-card__title {
+    font-size: 1.15rem;
+  }
+
+  .experience-card__summary {
+    margin-bottom: 1.25rem;
+  }
 }
 
 .space-down {
