@@ -939,6 +939,18 @@ a, a:hover {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-tag:hover,
+.project-tag:focus-visible {
+  transform: scale(1.08);
+  box-shadow: 0 6px 18px rgba(71, 198, 255, 0.25);
+}
+
+.project-tag:focus-visible {
+  outline: 3px solid rgba(71, 198, 255, 0.5);
+  outline-offset: 2px;
 }
 
 .project-card__cta {
@@ -976,6 +988,66 @@ a, a:hover {
 .project-card__cta:focus-visible {
   outline: 3px solid rgba(71, 198, 255, 0.65);
   outline-offset: 3px;
+}
+
+.project-card--teaser {
+  position: relative;
+  overflow: hidden;
+  border: 1px dashed rgba(71, 198, 255, 0.45);
+  background: rgba(6, 23, 46, 0.75);
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.project-card--teaser::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(71, 198, 255, 0.3), transparent 55%),
+    radial-gradient(circle at bottom left, rgba(143, 211, 255, 0.25), transparent 45%);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.project-card--teaser .project-card__body {
+  position: relative;
+  z-index: 1;
+  max-width: 22rem;
+  display: grid;
+  gap: 1rem;
+  justify-items: center;
+}
+
+.project-card__more-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background: rgba(71, 198, 255, 0.18);
+  color: var(--accent);
+  font-size: 1.5rem;
+  box-shadow: 0 8px 22px rgba(3, 15, 31, 0.45);
+}
+
+.project-card__more-title {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--text-primary);
+}
+
+.project-card__more-copy {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.project-card__more-copy span {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .project-card__cta--disabled {
@@ -1022,7 +1094,7 @@ a, a:hover {
 
 .skill-card:hover,
 .skill-card:focus-within {
-  transform: translateY(-4px);
+  transform: translateY(-4px) scale(1.05);
   box-shadow: 0 24px 48px rgba(3, 15, 31, 0.5);
 }
 
@@ -1047,6 +1119,7 @@ a, a:hover {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-primary);
+  transition: transform 0.25s ease;
 }
 
 .skill-card__badge {
@@ -1062,6 +1135,20 @@ a, a:hover {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover .skill-card__title,
+.skill-card:focus-within .skill-card__title {
+  color: var(--accent);
+  transform: scale(1.08);
+}
+
+.skill-card:hover .skill-card__badge,
+.skill-card:focus-within .skill-card__badge {
+  background: rgba(71, 198, 255, 0.24);
+  box-shadow: 0 10px 22px rgba(3, 15, 31, 0.45);
+  transform: scale(1.05);
 }
 
 @media (max-width: 600px) {
