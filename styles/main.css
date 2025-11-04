@@ -880,10 +880,37 @@ a, a:hover {
   height: 100%;
 }
 
+.project-card--no-media .project-card__body {
+  padding: 2rem;
+}
+
 .project-card__body h3 {
   margin: 0;
   font-size: 1.3rem;
   font-weight: 600;
+}
+
+.project-card__role {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+.project-card__list {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--text-muted);
+}
+
+.project-card__impact {
+  margin: 0;
+  font-style: italic;
+  color: var(--text-primary);
 }
 
 .project-card__body p {

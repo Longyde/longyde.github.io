@@ -63,6 +63,129 @@
         <hr />
       </div>
     </section>
+    <section class="projects-content professional-projects">
+      <div class="section-header">
+        <h2>Professional Projects</h2>
+        <a class="section-top-link" href="#Navbar">Back to top</a>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-card--no-media">
+          <div class="project-card__body">
+            <h3>Security Engineering Fundamentals (SEF) Portal – Microsoft</h3>
+            <p class="project-card__role">Role: Software Engineer</p>
+            <p>Internal security and compliance intelligence portal used by Microsoft leadership to monitor device compliance, SLA adherence, and risk posture across partner ecosystems.</p>
+            <ul class="project-card__list">
+              <li>Integrated an existing Virtual Organization Mapper API to dynamically connect people, teams, and metrics.</li>
+              <li>Engineered .NET REST APIs with Cosmos DB and Azure Functions to automate metric aggregation and publishing.</li>
+              <li>Provisioned Azure infrastructure—App Services, Key Vault, and Synapse pipelines—for resilient 24/7 operations.</li>
+              <li>Delivered a React (TypeScript) interface with embedded Power BI visuals for actionable reporting.</li>
+              <li>Collaborated with security and data engineering teams to streamline delegate management and delivery workflows.</li>
+            </ul>
+            <p class="project-card__impact">Result: Replaced manual reporting with a unified, automated view of Microsoft’s security and compliance health.</p>
+            <div class="project-card__tags">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">.NET</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Azure Functions</span>
+              <span class="project-tag">Cosmos DB</span>
+              <span class="project-tag">Synapse</span>
+              <span class="project-tag">Azure Data Explorer</span>
+              <span class="project-tag">Power BI</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-card--no-media">
+          <div class="project-card__body">
+            <h3>Virtual Organization Mapper – Microsoft</h3>
+            <p class="project-card__role">Role: Software Engineer</p>
+            <p>Core API service that builds accurate, on-demand hierarchies linking Microsoft employees to their virtual organization leads for automated metric attribution.</p>
+            <ul class="project-card__list">
+              <li>Implemented scheduled and ad-hoc jobs to synthesize HR records with live org charts daily.</li>
+              <li>Optimized ingestion of large Parquet and CSV datasets using memoization and streamlined parsing strategies.</li>
+              <li>Delivered reliable mappings that powered downstream systems, including the SEF Portal.</li>
+            </ul>
+            <p class="project-card__impact">Result: Enabled autonomous, timely reporting on device SLAs and compliance across the enterprise.</p>
+            <div class="project-card__tags">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">.NET</span>
+              <span class="project-tag">Azure Functions</span>
+              <span class="project-tag">Parquet</span>
+              <span class="project-tag">CSV Processing</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-card--no-media">
+          <div class="project-card__body">
+            <h3>Cosmos DB Schema Modifier &amp; Bulk Update Utility – Microsoft</h3>
+            <p class="project-card__role">Role: Software Engineer</p>
+            <p>Command-line and API toolkit designed to execute large-scale schema and document updates across Azure Cosmos DB collections with safety and auditability.</p>
+            <ul class="project-card__list">
+              <li>Supported add, update, and remove operations on nested and flat document properties.</li>
+              <li>Built automated backups, change tracking, and rollback flows to preserve data integrity.</li>
+              <li>Added validation, dry-run, and integrity checks to safeguard production workloads.</li>
+            </ul>
+            <p class="project-card__impact">Result: Cut manual data maintenance from hours to minutes for multiple internal services.</p>
+            <div class="project-card__tags">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">.NET</span>
+              <span class="project-tag">Cosmos SDK</span>
+              <span class="project-tag">JSON</span>
+              <span class="project-tag">CLI</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-card--no-media">
+          <div class="project-card__body">
+            <h3>Unified Library – Microsoft</h3>
+            <p class="project-card__role">Role: Software Engineer</p>
+            <p>Centralized data catalog and portal unifying telemetry assets stored across Azure Data Explorer, SQL, and Cosmos DB sources.</p>
+            <ul class="project-card__list">
+              <li>Designed relational schemas that harmonized distributed metadata into a cohesive catalog.</li>
+              <li>Implemented RBAC-driven access controls to meet internal compliance requirements.</li>
+              <li>Automated ingestion and synchronization workflows using Azure Functions and KQL.</li>
+              <li>Built React components for intuitive search, navigation, and visualization of assets.</li>
+            </ul>
+            <p class="project-card__impact">Result: Accelerated discovery and governance of telemetry data for security and engineering teams.</p>
+            <div class="project-card__tags">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">.NET</span>
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">SQL</span>
+              <span class="project-tag">Cosmos DB</span>
+              <span class="project-tag">Azure Data Explorer</span>
+              <span class="project-tag">Azure Functions</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card project-card--no-media">
+          <div class="project-card__body">
+            <h3>PDNS Ingestion &amp; Processing Pipeline – Microsoft</h3>
+            <p class="project-card__role">Role: Software Engineer</p>
+            <p>Cross-cloud ingestion and transformation workflow moving high-volume Passive DNS telemetry from AWS to Azure for security analytics.</p>
+            <ul class="project-card__list">
+              <li>Ingested terabytes of NMSG data daily from AWS S3 into Azure Blob Storage.</li>
+              <li>Transformed raw payloads into CSV, JSON, and JSONL formats while deduplicating and validating records.</li>
+              <li>Utilized Rust and C# orchestration on Linux-based Azure VMs for parallel, high-performance processing.</li>
+              <li>Experimented with Kafka streaming to explore real-time ingestion and resiliency.</li>
+              <li>Applied KQL analysis for ongoing monitoring, tuning, and anomaly detection.</li>
+            </ul>
+            <p class="project-card__impact">Result: Established a reliable telemetry bridge between AWS and Azure to strengthen security intelligence.</p>
+            <div class="project-card__tags">
+              <span class="project-tag">C#</span>
+              <span class="project-tag">.NET</span>
+              <span class="project-tag">Rust</span>
+              <span class="project-tag">Azure Functions</span>
+              <span class="project-tag">Azure VMs</span>
+              <span class="project-tag">KQL</span>
+              <span class="project-tag">Kafka</span>
+              <span class="project-tag">AWS S3</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <section id="footer">
